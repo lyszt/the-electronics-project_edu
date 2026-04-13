@@ -8,7 +8,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>adder_8bit</string>
+          <string>memory_256x8</string>
         </entry>
         <entry>
           <string>applicationType</string>
@@ -16,33 +16,7 @@
         </entry>
         <entry>
           <string>externalInputs</string>
-          <string>a:8,b:8,cin</string>
-        </entry>
-        <entry>
-          <string>externalOutputs</string>
-          <string>sum:8,cout</string>
-        </entry>
-        <entry>
-          <string>CodeFile</string>
-          <file>/home/kaldwin/Development/Projects/the_electronics_project_misc/src/adder_8bit.v</file>
-        </entry>
-      </elementAttributes>
-      <pos x="700" y="420"/>
-    </visualElement>
-    <visualElement>
-      <elementName>ExternalFile</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
-          <string>register_8bit</string>
-        </entry>
-        <entry>
-          <string>applicationType</string>
-          <appType>IVERILOG</appType>
-        </entry>
-        <entry>
-          <string>externalInputs</string>
-          <string>clk,reset,write,data_in:8</string>
+          <string>clk,write,address:8,data_in:8</string>
         </entry>
         <entry>
           <string>externalOutputs</string>
@@ -50,10 +24,45 @@
         </entry>
         <entry>
           <string>CodeFile</string>
-          <file>/home/kaldwin/Development/Projects/the_electronics_project_misc/src/register_8bit.v</file>
+          <file>/home/kaldwin/Development/Projects/the_electronics_project_misc/src/memory_256x8.v</file>
         </entry>
       </elementAttributes>
-      <pos x="1120" y="380"/>
+      <pos x="940" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes/>
+      <pos x="720" y="400"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="680" y="440"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="640" y="480"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="1080" y="440"/>
     </visualElement>
     <visualElement>
       <elementName>Clock</elementName>
@@ -67,126 +76,49 @@
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="660" y="300"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>8</int>
-        </entry>
-      </elementAttributes>
-      <pos x="660" y="420"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>8</int>
-        </entry>
-      </elementAttributes>
-      <pos x="620" y="480"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes/>
-      <pos x="660" y="620"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Out</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>8</int>
-        </entry>
-      </elementAttributes>
-      <pos x="1280" y="420"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes/>
-      <pos x="620" y="540"/>
-    </visualElement>
-    <visualElement>
-      <elementName>In</elementName>
-      <elementAttributes/>
-      <pos x="920" y="460"/>
+      <pos x="720" y="340"/>
     </visualElement>
   </visualElements>
   <wires>
     <wire>
-      <p1 x="620" y="480"/>
-      <p2 x="660" y="480"/>
+      <p1 x="720" y="400"/>
+      <p2 x="880" y="400"/>
     </wire>
     <wire>
-      <p1 x="980" y="400"/>
-      <p2 x="1120" y="400"/>
+      <p1 x="640" y="480"/>
+      <p2 x="940" y="480"/>
     </wire>
     <wire>
-      <p1 x="660" y="420"/>
-      <p2 x="700" y="420"/>
+      <p1 x="880" y="420"/>
+      <p2 x="940" y="420"/>
     </wire>
     <wire>
-      <p1 x="760" y="420"/>
-      <p2 x="1020" y="420"/>
+      <p1 x="720" y="340"/>
+      <p2 x="940" y="340"/>
     </wire>
     <wire>
-      <p1 x="1180" y="420"/>
-      <p2 x="1280" y="420"/>
+      <p1 x="680" y="440"/>
+      <p2 x="880" y="440"/>
     </wire>
     <wire>
-      <p1 x="660" y="440"/>
-      <p2 x="700" y="440"/>
+      <p1 x="1000" y="440"/>
+      <p2 x="1080" y="440"/>
     </wire>
     <wire>
-      <p1 x="1040" y="440"/>
-      <p2 x="1120" y="440"/>
+      <p1 x="880" y="460"/>
+      <p2 x="940" y="460"/>
     </wire>
     <wire>
-      <p1 x="660" y="300"/>
-      <p2 x="1120" y="300"/>
+      <p1 x="880" y="400"/>
+      <p2 x="880" y="420"/>
     </wire>
     <wire>
-      <p1 x="1020" y="460"/>
-      <p2 x="1120" y="460"/>
+      <p1 x="880" y="440"/>
+      <p2 x="880" y="460"/>
     </wire>
     <wire>
-      <p1 x="920" y="460"/>
-      <p2 x="980" y="460"/>
-    </wire>
-    <wire>
-      <p1 x="660" y="620"/>
-      <p2 x="1040" y="620"/>
-    </wire>
-    <wire>
-      <p1 x="620" y="540"/>
-      <p2 x="700" y="540"/>
-    </wire>
-    <wire>
-      <p1 x="1120" y="300"/>
-      <p2 x="1120" y="380"/>
-    </wire>
-    <wire>
-      <p1 x="1040" y="440"/>
-      <p2 x="1040" y="620"/>
-    </wire>
-    <wire>
-      <p1 x="660" y="440"/>
-      <p2 x="660" y="480"/>
-    </wire>
-    <wire>
-      <p1 x="980" y="400"/>
-      <p2 x="980" y="460"/>
-    </wire>
-    <wire>
-      <p1 x="1020" y="420"/>
-      <p2 x="1020" y="460"/>
-    </wire>
-    <wire>
-      <p1 x="700" y="460"/>
-      <p2 x="700" y="540"/>
+      <p1 x="940" y="340"/>
+      <p2 x="940" y="400"/>
     </wire>
   </wires>
   <measurementOrdering/>

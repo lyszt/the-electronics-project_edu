@@ -1,7 +1,8 @@
 # The Electronics Project
 
-A study repository. The goal is to learn PCB design — how to take a circuit idea and turn it into an actual board you can hold.
+A study repository. The goal is to learn PCB design and digital circuits. Verilog, Arduino, ESP32 and Raspberry PI. I will be posting my progress here as I continue. 
 
+Final objective is to print a real circuit or PCB. 
 To get there, I'm working through the fundamentals first. The Arduino sketches are for getting comfortable with physical components: buttons, LEDs, reading signals, that kind of thing. The Verilog side is for understanding digital logic more deeply — how basic building blocks like registers, counters, and memory actually work together. 
 
 The processor is being made so I can learn in the most painful way possible how electronics work at the lowest level. 

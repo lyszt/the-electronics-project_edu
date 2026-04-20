@@ -47,7 +47,7 @@ A basic toggle device with a physical button and two LEDs (red and blue).
 **Behavior:**
 * When powered on, the red LED lights up.
 * Pressing the button turns off the red LED and turns on the blue LED.
-* Pressing the button again reverts the state.
+* Letting go of the button reverts the state.
 
 **Circuit:** button on pin 9 (INPUT_PULLUP), blue LED on pin 2, red LED on pin 7.
 

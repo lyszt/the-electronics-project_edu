@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/28efc1bf-6c1e-4fa8-be0d-b006401e1786
+
 # The Electronics Project
 
 A study repository. The goal is to learn PCB design and digital circuits. Verilog, Arduino, ESP32 and Raspberry PI. I will be posting my progress here as I continue. 
@@ -64,6 +68,10 @@ Sets a pin HIGH. That's it.
 Reads a pin and prints the value to serial. Basic intro stuff.
 
 ### 4. Traffic control
+
+https://github.com/user-attachments/assets/94a3d373-9e6a-445c-b1ca-2f835623930f
+
+
 
 **Description:**
 A 3-state automatic traffic signal. Cycles green → yellow → red on a timer. Button interrupts and forces red immediately (pedestrian crossing).

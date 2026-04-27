@@ -62,3 +62,17 @@ Sets a pin HIGH. That's it.
 ### 3. Read test
 
 Reads a pin and prints the value to serial. Basic intro stuff.
+
+### 4. Traffic control
+
+**Description:**
+A 3-state automatic traffic signal. Cycles green → yellow → red on a timer. Button interrupts and forces red immediately (pedestrian crossing).
+
+**Behavior:**
+* **Green** (state 0): green LED on for 5s, runs 2 cycles (10s total), then advances to yellow.
+* **Yellow** (state 1): red + green LEDs on (mixing to yellow), buzzer beeps for 2s, then advances to red.
+* **Red** (state 2): red LED on for 5s, runs 2 cycles (10s total), then loops back to green.
+* Button press at any time: jumps directly to red with 500ms debounce.
+* Button presses are checked mid-delay (`responsiveDelay`) so the signal is always interruptible.
+
+**Circuit:** button on pin 9 (INPUT_PULLUP), red LED on pin 2, green LED on pin 3, blue LED on pin 4, buzzer on pin 7.
